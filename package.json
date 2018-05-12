@@ -1,0 +1,23 @@
+{
+  "name": "string-pixelater",
+  "version": "1.0.0",
+  "description": "Pixelate string",
+  "main": "dist/js/string-pixelater.js",
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:patch": "yarn run build && npm version patch && git push origin master && git push origin --tags && npm publish --access=public",
+    "publish:minor": "yarn run build && npm version minor && git push origin master && git push origin --tags && npm publish --access=public",
+    "publish:major": "yarn run build && npm version major && git push origin master && git push origin --tags && npm publish --access=public"
+  },
+  "repository": "https://github.com/ohbarye/string-pixelater",
+  "author": "ohbarye <over.rye@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.58.2",
+    "rollup-plugin-typescript2": "^0.14.0",
+    "typescript": "^2.8.3"
+  }
+}
