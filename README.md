@@ -1,8 +1,12 @@
 # String Pixelater
 
-This is a simple tool to pixelate any string. `pixelate` means to "convert string to a two-dimensional array" so that we can deal with the tabular data for several purposes.
+![image](https://user-images.githubusercontent.com/1811616/39958038-d70fbda2-5637-11e8-8b03-4b2d7bb21bf4.png)
+
+This is a simple tool to pixelate any characters. `pixelate` means to "convert a character to a two-dimensional array" so that we can deal with the tabular data for several purposes. I actually compose this and [p5.js](https://p5js.org/) for painting generative art.
 
 ```javascript
+> StringPixelater.pixelate('hello', {fontSize: 24})
+
 [
   [0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
   [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -25,7 +29,6 @@ This is a simple tool to pixelate any string. `pixelate` means to "convert strin
   [0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0]
 ]
 ```
-
 
 ## How does it work?
 
@@ -141,4 +144,15 @@ function draw() {
 
 This results like below:
 
-![image](https://user-images.githubusercontent.com/1811616/39957847-bd96294a-5634-11e8-93be-9efaac493833.png)
+<img width="200" alt="2018-05-12 22 49 04" src="https://user-images.githubusercontent.com/1811616/39957847-bd96294a-5634-11e8-93be-9efaac493833.png">
+
+## Examples with this library
+
+It just uses `StringPixelater.pixelate('hello')`.
+
+<img width="848" alt="2018-05-12 22 49 04" src="https://user-images.githubusercontent.com/1811616/39958008-34941f78-5637-11e8-8ec9-271d87e58f76.png">
+
+We can get pixelated emoji as like `StringPixelater.pixelate('🐈')`.
+
+<img width="597" alt="2018-05-12 22 52 36" src="https://user-images.githubusercontent.com/1811616/39958009-34b9721e-5637-11e8-80c2-42b5e6661e23.png">
+
