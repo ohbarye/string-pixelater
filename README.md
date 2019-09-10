@@ -68,7 +68,7 @@ const table = StringPixelater.pixelate('Hello, world');
 You can change `StringPixelater`'s behavior with the following options.
 
 Parameter | Required | Type | Default | Description
---- | --- | --- | ---
+--- | --- | --- | --- | ---
 fontSize | false | `number` | `12` | Font size.
 fontName | false | `string` | `'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic'` | Font name.
 transpose | false | `boolean` | false | If it's `true`, it transposes a result tabular.
