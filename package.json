@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "rollup": "^1.23.1",
-    "rollup-plugin-typescript2": "^0.24.3",
+    "rollup-plugin-typescript2": "^0.31.1",
     "typescript": "^3.6.4"
   }
 }
